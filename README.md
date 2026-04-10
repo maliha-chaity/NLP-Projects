@@ -1,36 +1,25 @@
-Drug Side-Effect Detector (NLP Project)
-Overview:
+Biomedical NLP Projects: Drug Information & Side-Effect Analysis
 
-This project is an AI-powered Natural Language Processing (NLP) system that detects whether a given medical text describes an adverse drug reaction (side effect). It also extracts relevant entities such as drug names and symptoms.
+This repository contains two end-to-end Natural Language Processing (NLP) projects focused on biomedical text analysis for pharmacovigilance and drug safety applications.
 
-This project simulates a real-world pharmacovigilance use case, where automated systems assist in identifying potential drug safety issues from unstructured text data.
+The goal of these projects is to demonstrate how unstructured medical text can be transformed into structured, machine-readable data using NLP techniques and used for downstream analytics and knowledge representation.
 
-Features:
-1) Detects presence of drug side effects from text
-2) Extracts drug names and symptoms using NLP
-3) Machine learning-based classification model
-4) Modular and reusable code structure
+Projects Included
+1. Drug Information Extractor
 
-Tech Stack:
-Python
-scikit-learn (ML model)
-spaCy (NLP / NER)
-pandas, numpy
+An AI-powered system that extracts key biomedical entities such as drug names, side effects, and over-the-counter (OTC) availability from unstructured documents (TXT, PDF, and Word files). The extracted information is structured into CSV format and visualized using a knowledge graph built with Neo4j.
 
-How It Works:
-Text data is cleaned and preprocessed
-TF-IDF vectorization converts text into features
-A Logistic Regression model is trained
-spaCy is used to extract drug and symptom entities
-The system predicts whether a side effect is present
+2. Drug Side-Effect Detector
 
-Example:
-Input: Patient developed headache after taking ibuprofen
-Output:
-Side Effect Detected: True
-Confidence: 0.91
-Drug: ibuprofen
-Symptom: headache
+A machine learning-based NLP system that analyzes medical text to detect whether a drug is associated with side effects. It includes text preprocessing, model training, and prediction capabilities for identifying potential adverse drug reactions.
+
+Objective
+
+These projects aim to simulate real-world pharmacovigilance systems by automating:
+
+Extraction of biomedical information from unstructured text
+Detection of drug-related adverse effects
+Structuring data for downstream analysis and knowledge graph construction
 
 Use Case:
 This project demonstrates how AI can support pharmacovigilance by automating detection of adverse drug events from textual data, which is critical for improving drug safety monitoring.
